@@ -1,0 +1,9 @@
+<h3>Estudiantes destacados</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let estudiante of estudiantes" class="col-1-4"
+      routerLink="/detalle/{{estudiante.id}}">
+    <div class="module estudiante">
+      <h4>{{estudiante.nombre}}</h4>
+    </div>
+  </a>
+</div>
